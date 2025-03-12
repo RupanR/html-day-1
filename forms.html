@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/contact.png" type="image/x-icon" />
+    <title>Personal Info</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Forms</h1>
+    </header>
+    <!-- <hr /> -->
+    <main>
+      <form>
+        <fieldset>
+          <legend>
+            <strong><mark>Personal Info</mark></strong>
+          </legend>
+          <p>
+            <label for="first">First Name</label>
+            <input
+              type="text"
+              name="first"
+              id="first"
+              placeholder="Enter Your First Name"
+              required
+            />
+          </p>
+          <p>
+            <label for="last">Last Name</label>
+            <input
+              type="text"
+              name="last"
+              id="last"
+              placeholder="Enter Your Last Name"
+              required
+            />
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Your Mail Id"
+              required
+            />
+          </p>
+          <p>
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Enter Your Mobile Number"
+              required
+            />
+          </p>
+          <p>
+            <label for="age">Age</label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              placeholder="Enter Your Age"
+              required
+            />
+          </p>
+          <p>
+            <label for="dob">Date Of Birth</label>
+            <input
+              type="date"
+              name="dob"
+              id="dob"
+              placeholder="Enter Your Date Of Birth"
+            />
+          </p>
+          <p>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female" />
+            <label for="female">Female</label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>
+            <strong><mark>Favorite Foods</mark></strong>
+          </legend>
+          <p>
+            <label for="food">Favorite Dishes</label>
+            <select name="food" id="food">
+              <optgroup label="Tiffin">
+                <option value="Idly">Idly</option>
+                <option value="Poori">Poori</option>
+                <option value="Pongal">Pongal</option>
+                <option value="Dosai">Dosai</option>
+              </optgroup>
+              <optgroup label="lunch">
+                <option value="Briyani">Briyani</option>
+                <option value="Meals">Meals</option>
+                <option value="Variety Rice">Variety Rice</option>
+                <option value="Chapathi">Chapathi</option>
+              </optgroup>
+            </select>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>
+            <strong><mark>Favorite Sports</mark></strong>
+          </legend>
+          <p>
+            <label for="sport">Favorite Game</label>
+            <input
+              type="text"
+              name="sport"
+              id="sport"
+              placeholder="Enter Your Favorite Sport"
+              list="sport-list"
+            />
+            <datalist id="sport-list">
+                <option value="VolleyBall">VolleyBall</option>
+                <option value="Cricket">Cricket</option>
+                <option value="Football">Football</option>
+            </datalist>
+          </p>
+        </fieldset>
+        <fieldset>
+            <legend><strong><mark>Skills</mark></strong></legend>
+            <p>
+                <label for="html">HTML</label>
+                <input type="checkbox" name="skills" id="html" value="HTML">
+            </p>
+            <p>
+                <label for="css">CSS</label>
+                <input type="checkbox" name="skills" id="css" value="CSS">
+            </p>
+            <p>
+                <label for="js">JS</label>
+                <input type="checkbox" name="skills" id="js" value="JS">
+            </p>
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </main>
+    <!-- <footer>
+      <hr />
+      <marquee>
+        &lt; &lt; &lt; &lt; &lt;<mark><strong>&copy;Rupan</strong></mark
+        >&gt;&gt;&gt;&gt;&gt;
+      </marquee>
+      <br />
+      <a href="#" target="_top"><button>Back To Top</button></a>
+    </footer> -->
+  </body>
+</html>
